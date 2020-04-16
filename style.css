@@ -141,14 +141,96 @@ Opcje to: */
  
  /* Tytuły linków */
  /* Atrybut "title" dostarcza dodatkowych informacji na temat elementu. Njczęściej te informacje pojawiają się po najechasniu kursorem na dany link bądź element. */
-  <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a> 
-  
-  
+ <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a> 
  
  
+/* Odniesienia do zewnętrznych stron */
+ 
+/* Do zewnętrznych stron można odwoływać się pełnym adresem URL lub ścieżką względem bieżącej strony internetowej.*/
+/* Przykład zastosowania pełnego adresu URL do strony internetowej:*/
+ <a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>   
+ 
+/* Ten przykład prowadzi do strony znajdującej się w folderze HTML w bieżącej witrynie internetowej:*/
+ <a href="/html/default.asp">HTML tutorial</a> 
+ 
+/* Ten przykład prowadzi do strony znajdującej się w tym samym folderze co bieżąca strona:*/ 
+ <a href="default.asp">HTML tutorial</a> 
+ 
+/* Zmiana koloru linku */
+/* Nieodwiedzony link jest podkreślony i niebieski
+   Odwiedzony link jest podkreślony i fioletowy
+   Aktywny link jest podkreślony i czerwony 
+   Przykład zmiany kolorów linku */
+<a href="html_images.asp" target="_blank">HTML Images</a> 
+ 
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style> 
+
+/* Przykład zmiany ustawień linku jako button-a*/
+<h2>Link Button</h2>
+<p>A link styled as a button:</p>
+
+<a href="default.asp" target="_blank">This is a link</a>
+
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style> 
  
  
+				/* BOOKMARKS - zakładki */
+/* Zakładki HTML służą do umożliwiania czytelnikom przeskakiwania do określonych części strony internetowej.
+Zakładki mogą być przydatne, jeśli strona internetowa jest bardzo długa.
+Aby utworzyć zakładkę - najpierw utwórz zakładkę, a następnie dodaj link do niej.
+Po kliknięciu łącza strona przewinie się w dół lub w górę do lokalizacji z zakładką.*/
+
+/* Tworzę id atrybut*/
+
+<h2 id="C4">Chapter 4</h2>
+
+/* Następnie dodaję link do zakładki („Przejdź do rozdziału 4”) z tej samej strony:*/
+
+ <a href="#C4">Jump to Chapter 4</a> 
  
- 
- 
- 
+/* Można również dodać link do zakładki na innej stronie*/
+
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+
+
+
+
+
