@@ -1,3 +1,115 @@
-body { background-color: powderblue;}
-h1 { color: blue;}
-p {color: red;}
+/* CSS - Cascading Style Sheets. Określa jak elementy mają być wyświetlane. 
+Style mogą być dodane na 3 sposoby: Inline, Internal, External.
+
+    Inline - czyli wewnątrz elementu HTML poprzez użycie "style" i przypisanie do niego wartości. Inline dodaje uniklalny styl dla pojedyńczego elementu i używa atrybutów.
+	Przykład dla inline: */
+	
+	 <h1 style="color:blue;">This is a Blue Heading</h1> 
+	
+	
+	/*
+	
+    Internal - używając znacznika <style> w sekcji <head> na stronie - w dokumencie html.
+	Ustala wygląd dla całej strony.
+	Przykład dla internal: */
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<style>
+	body {background-color: powderblue;}
+	h1   {color: blue;}
+	p    {color: red;}
+	</style>
+	</head>
+	<body>
+	<h1>This is a heading</h1>
+	<p>This is a paragraph.</p>
+
+	</body>
+	</html> 
+	
+	
+	/*
+    External - poprzez użycie zewnętrznego pliku css, najczęściej stosowany. "style.css".
+	Można w nim definiować style dla wielu dokumentów html.
+	Aby go użyć należy dodać link w sekcji <head> dokumentu html.
+	Przykład: */
+	
+	<!DOCTYPE html>
+	<html>
+	<head>
+	  <link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+
+	<h1>This is a heading</h1>
+	<p>This is a paragraph.</p>
+
+	</body>
+	</html> 
+
+
+
+/* Przykładowe ustawienia dla całego dokumentu - strony przy użyciu zewnętrznego pliku "style.css" */
+body {
+  background-color: powderblue;
+=}
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 180%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 120%;
+}
+					/* Elementy */
+
+/* border - definiuje obramowanie elementu. */
+p {
+  border: 1px solid powderblue;
+}
+	
+/* padding - definiuje odległość pomiędzy tekstem a obramowaniem */
+p {
+  border: 1px solid powderblue;
+  padding: 30px;
+}
+/* margin - definiuje odległość po zewnętrznej stronie obramowania (odległość od krawędzi ekranu do obramowania elementu) */	
+p {
+  border: 1px solid powderblue;
+  margin: 50px;
+}
+/* id - definiuje specyficzny style dla konnkretnego elementu. W przypadku posiadania kilku identycznych elementów np <h1> zastosowanie atrybutu id ze zdefiniowanymi wartościami przy jednym z nich, spowoduje zmianę ustawień tylko dla tego wybranego elementu. Id powinno być unikalne dla całej strony!! */
+#p01 {
+  color: blue;
+}
+
+<p id="p01">I am different</p>
+
+
+/* class - definiuje styl dla specjalnego, konkretnego typu elementu*/
+p.error {
+  color: red;
+}
+<p class="error">I am different</p>
+ 
+/* Dostę do zewnętrznego pliku ze stylami można zdefiniować podając pełny url "adres" lub poprzez podanie ścieżki do folderu zawierającego zewnętrzny plik css na danej stronie albo też poprzez podanie ścieżki do pliku jeśli ten znajduje się w tym samym folderze co dokument strony.
+Przykłady: */
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+/*lub*/					
+<link rel="stylesheet" href="/html/styles.css"> 					
+/*lub*/	
+<link rel="stylesheet" href="styles.css"> 
+
+	
+						/* Tagi styli */	
+<style> /* dostarcza informacji o stylach w dokumencie html.*/
+<link>	/* definiuje link-odnośnik do zewnętrznego źródła-pliku*/				
+					
+					
+					
+					
+					
+					
