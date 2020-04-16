@@ -1,7 +1,7 @@
 /* CSS - Cascading Style Sheets. Określa jak elementy mają być wyświetlane. 
 Style mogą być dodane na 3 sposoby: Inline, Internal, External.
 
-    Inline - czyli wewnątrz elementu HTML poprzez użycie "style" i przypisanie do niego wartości. Inline dodaje uniklalny styl dla pojedyńczego elementu i używa atrybutów.
+    Inline - czyli wewnątrz elementu HTML poprzez użycie "style" i przypisanie do niego wartości. Inline dodaje unikalny styl dla pojedyńczego elementu i używa atrybutów.
 	Przykład dla inline: */
 	
 	 <h1 style="color:blue;">This is a Blue Heading</h1> 
@@ -64,7 +64,7 @@ p {
   font-family: courier;
   font-size: 120%;
 }
-					/* Elementy */
+					/* Przyładowe elementy */
 
 /* border - definiuje obramowanie elementu. */
 p {
@@ -109,7 +109,46 @@ Przykłady: */
 <link>	/* definiuje link-odnośnik do zewnętrznego źródła-pliku*/				
 					
 					
+						/* Link-i */
+/* Link to hiperłącza. Po kliknięciu przechodzę do innego dkumentu. Link nie musi być tekstem, może być np obrazem lub każdym innym elementem html. Link definiuje się w html w tag-u <a> Atrybut "href" określa adres docelowy łącza. Tekst linku jest "widoczną częścią dla użytkownika". Kliknięcie teksu odsyła pod konkretny , wskazany adres.
+Ogólna postać:*/
+<a href="url">link text</a>
+/*Komkretny przykład:*/
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a> 
 					
-					
-					
-					
+/*Oprócz podawania adresów bezwzględnych "pełnych" jako linków, można podać również adresy względne (bez http://www...) są to linki lokalne, linki do tej samej strony bądź elementu znajdującego się na tej stronie 
+Przykład: 
+*/
+<a href="html_images.asp">HTML Images</a> 
+
+/*Atrybut "target" określa gdzie otworzyć połączony dokument.
+Opcje to: */
+	blank -/* Otwiera połączony dokument w nowym oknie lub karcie */
+    self - /* Otwiera połączony dokument w tym samym oknie / karcie, w której został kliknięty (jest to domyślny) */
+    parent - /* Otwiera połączony dokument w ramce nadrzędnej */
+    top - /* Otwiera połączony dokument w całym oknie */
+	framename - /* Otwiera połączony dokument w nazwanej ramce */
+
+ <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+ <a href="https://www.w3schools.com/html/" target="_top">HTML5 tutorial!</a> 
+ 
+/* Zdjęcie jako link */	
+ <a href="default.asp">
+ <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+ </a> 	
+/* Button jako link */
+ <button onclick="document.location = 'default.asp'">HTML Tutorial</button> 
+ 
+ /* Tytuły linków */
+ /* Atrybut "title" dostarcza dodatkowych informacji na temat elementu. Njczęściej te informacje pojawiają się po najechasniu kursorem na dany link bądź element. */
+  <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a> 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
