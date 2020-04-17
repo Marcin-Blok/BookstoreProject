@@ -1,0 +1,56 @@
+body {
+  background-color: grey;
+}
+
+h3 {
+  color: blue;
+  background-color: red;
+}
+
+h4 {
+  color: blue;
+}
+
+h2#pierwszy{
+  color: orange;
+}
+
+h2 {
+  color:red;
+}
+
+#pierwszy {
+  color:green;
+}
+
+.parzysty {
+  color: yellow;
+}
+
+.nieparzysty {
+  color: brown;
+}
+
+ul li.parzysty{
+  color: green;
+}
+
+p {
+  border: 1px solid red;
+}
+
+body div p.klasa {
+  border: 1px solid blue;
+}
+
+div.pierwszy.naglowek {
+
+}
+
+div.pierwszy.naglowek {
+
+}
+
+p[title='John "ShotGun" Nelson'] + div li > {
+  color: violet;
+}

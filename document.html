@@ -2,16 +2,17 @@
 <html>
   <head>
     <title>Księgarnia</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
   </head>
-  <body style="background-color:powderblue;">
+  <body>
 
     										<!-- Tag-i -->
     <!-- Dodanie nagłówków -->
-    <h1>Witam na mojej pierwszej stronie! - Nagłówek 1</h1>
+    <h1 style="color:red">Witam na mojej pierwszej stronie! - Nagłówek 1</h1>
     <h2>Witam na mojej pierwszej stronie! - Nagłówek 2</h2>
     <h3>Witam na mojej pierwszej stronie! - Nagłówek 3</h3>
-
+    <h4>Witaj</h4>
 
     <!-- Dodanie paragrafu -->
     <p>Paragraf, to wydzielona część tekstu z danego artukułu.</p>
@@ -20,19 +21,18 @@
     <!-- Dodanie linku i opisu widocznego dla linku-->
     <a href="https://github.com/Marcin-Blok/BookstoreProject">Link do github</a>
 
-
+    <h4>Witaj 2</h4>
     <!-- Znacznik linii poziomej -->
     <br>
 
 
     <!-- Dodanie zdjęcia. Atrybut "alt" to alternatywny tekst który będzie wyświetlony w razie gdyby wyświetlenie obrazu było niemożliwe oraz będzie przeczytany dla osób które korzystają z czytnika tekstu-->
-    <img src="https://polacynaibizie.pl/wp-content/uploads/2018/04/sunsetashram2.jpg" alt="polacynaibizie.pl" width="600" height="400">
-    <br>
-
+    <img src="https://polacynaibizie.pl/wp-content/uploads/2018/04/sunsetashram2.jpg" alt="polacynaibizie.pl" width="600" height="400"/>
+    <br/>
 
     <!-- Dodanie znacznika "Button" -->
      <button>Click me</button>
-    <br>
+    <br/>
 
 
     <!-- Dodanie listy nie ponumerowanej <ul>-(bullet list) oraz ponumerowanej <ol>. Element listy to <li> -->
@@ -65,9 +65,9 @@
     </p>
 
     <!-- Przykład zagnieżdżenia znaku cudzysłowia i apostrofu -->
-    <p title='John "ShotGun" Nelson'>
     <!-- albo -->
-    <p title="John 'ShotGun' Nelson">
+    <p title='John "ShotGun" Nelson'>John "ShotGun" Nelson </p>
+    <p title="John 'ShotGun' Nelson">John "ShotGun" Nelson <p>
 
 
 
@@ -201,5 +201,43 @@
     <br>
     <!-- Mixer kolorów w HSL -->
     <a href="https://www.w3schools.com/html/html_colors_hsl.asp">Mixer kolorów w HSL</a>
+
+
+<p> Poza div</p>
+
+    <div>
+      <h2 id="pierwszy">Pierwszy</h2>
+      <p>opis pierwszego</p>
+    </div>
+
+    <div id="drugi" class="parzysty blok naglowek">
+      <h2>Drugi</h2>
+      <p>opis drugiego</p>
+    </div>
+
+
+    <ul>
+      <li class="nieparzysty">1</li>
+      <li class="parzysty">2</li>
+      <li class="nieparzysty">3</li>
+      <li class="parzysty">4</li>
+      <li class="nieparzysty">5</li>
+      <li class="parzysty">6</li>
+      <li class="nieparzysty">7</li>
+      <li class="parzysty">8</li>
+      <li class="nieparzysty">9</li>
+      <li class="parzysty">10</li>
+    </ul>
+
+    <div>
+      <p>
+        <span class="pierwsze_slowo">To</span>jest tekst
+      </p>
+      <p>
+          <span class="pierwsze_slowo">Abc</span>abc sdfs sdf sdf
+      </p>
+    </div>
+
+
   </body>
 </html>
