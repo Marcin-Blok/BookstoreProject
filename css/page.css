@@ -5,6 +5,7 @@ body {
 .content {
   width: 800px;
   margin: auto;
+  padding:1%;
   text-align: justify;
 }
 .container {
@@ -33,4 +34,11 @@ li a {
 
 li a:hover {
   background-color: #111111;
+}
+.inline{
+	display: inline-block;
+	width: 33%;
+	background-color:lightblue;
+	margin: 0px;
+	padding: 0px;
 }
