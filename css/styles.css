@@ -1,56 +1,47 @@
+#bg{
+    background: url(../bricks.png) no-repeat center fixed;
+}
 body {
-  background-color: grey;
-}
-
-h3 {
-  color: blue;
-  background-color: red;
-}
-
-h4 {
-  color: blue;
-}
-
-h2#pierwszy{
-  color: orange;
-}
-
-h2 {
-  color:red;
-}
-
-#pierwszy {
-  color:green;
-}
-
-.parzysty {
-  color: yellow;
-}
-
-.nieparzysty {
-  color: brown;
-}
-
-ul li.parzysty{
-  color: green;
-}
-
-p {
-  border: 1px solid red;
-}
-
-body div p.klasa {
-  border: 1px solid blue;
-}
-
-div.pierwszy.naglowek {
+	width: 100%;
+	margin: 0px;
 
 }
 
-div.pierwszy.naglowek {
-
+.content {
+  width: 800px;
+  margin: auto;
+  padding:2%;
+  text-align: justify;
+  opacity: 1;
+  background-color: white;
 }
 
-p[title='John "ShotGun" Nelson'] + div li > {
-  color: violet;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0f3746;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+  color: #0f3746;
+}
+.container{
+  background-image: url();
 }

@@ -2,10 +2,10 @@
 <html>
   <head>
     <title>Kontakt</title>
-    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-	<div class="container">
+	<div>
 		<nav>
 			<ul>
 				<li><a href="document.html">Home</a></li>
@@ -15,8 +15,22 @@
 			</ul>
 		</nav>
 		<section class="content">
-        <p>aksdjflaskdf@wp.pl</p>
+      <form>
+          <fieldset>
+            <label>
+              <p>Zadaj pytanie lub wpisz swoje uwagi:</p>
+              <textarea cols="80" rows="6"></textarea>
+            </label>
+            <br>
+            <label for="imę">Imię:</label>
+            <input type="text" name="imię" id="imię" placeholder="Podaj swoje imię">
+            <label>E-mail:</label>
+              <input type="email" name="email" id="email" placeholder="Podaj swój adres email">
+            </label>
+            <input type="submit" value="Wyślij">
+          </fieldset>
+      </form>
     </section>
 	</div>
 	</body>
-</html>	
+</html>
